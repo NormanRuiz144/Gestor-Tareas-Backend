@@ -6,7 +6,8 @@
   "author": "Norman",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.ts"
+    "dev": "nodemon src/app.ts",
+    "start": "node src/app.ts"
   },
   "dependencies": {
     "@koa/cors": "^5.0.0",
