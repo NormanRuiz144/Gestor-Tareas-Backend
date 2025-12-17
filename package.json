@@ -4,10 +4,12 @@
   "description": "",
   "license": "ISC",
   "author": "Norman",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
     "dev": "nodemon src/app.ts",
-    "start": "node src/app.ts"
+    "build": "npx prisma generate && tsc",
+    "start": "node dist/app.js",
+    "render-build": "npm install && npm run build"
   },
   "dependencies": {
     "@koa/cors": "^5.0.0",
