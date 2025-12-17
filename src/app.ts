@@ -11,8 +11,7 @@ const PORT = process.env.PORT || 3000;
 const app = new koa();
 app.use(
   cors({
-    origin:
-      "https://gestor-tareas-frontend-bjx3zc1jl-norman-hernandezs-projects.vercel.app",
+    origin: "https://gestor-tareas-backend-nmzt.onrender.com",
     credentials: true,
   })
 );
